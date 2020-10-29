@@ -46,15 +46,33 @@
           </form>
         </div>
         </nav>
-        <section class="about">
-            <div id="map">
-            </div>
-            <div class="rightSide1">
-            </div>
-        </section>
-        <section class="diagrams">
+
+        <div class="container-fluid">
+          <div class="row  justify-content-around align-items-center ">
+              <div  class="col-xl-7 col-sm-12 " id="map">
+              </div>
+              <div class="col-xl-4 col-sm-12 rightSide">
+                <div class="input-group mb-3">
+                  <input id ="addCityInput" type="text" class="form-control" placeholder="Most searched cities" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button id='addCityButton' class="btn btn-outline-secondary" type="button"  onclick="addCityFunction()">Add</button>
+                  </div>
+              </div>
+                   
+                    <ul id="cityList">
+                    </ul>
+                </div>
+               
+              </div>
+          </div>
+        </div> 
+         
+        <!-- <section class="diagrams">
             <h1>DIAGRAM</h1>
         </section>
+        <section class="diagrams">
+          <h1>REKLAMA</h1>
+      </section>
         <section class="about">
             <div class="leftSide">
 
@@ -63,8 +81,10 @@
 
             </div>
         </section>
+        </div> -->
+          
 
-        <footer> ADMIN OKON</footer>
+        <!-- <footer> ADMIN OKON</footer> -->
 
         
         <!-- bootstrap js -->
@@ -76,6 +96,7 @@
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
         crossorigin=""></script>
         <script src="script.js"></script>
+        <script src="myscript.js"></script>
 
 </body>
 </html>
